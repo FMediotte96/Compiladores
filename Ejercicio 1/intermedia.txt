@@ -1,0 +1,5 @@
+_Ingrese_un_valor_pivot_mayor_o_igual_a_1_ WRITE subArbol_0 
+pivot READ union pivot < _1 IF @msgMayor_1 subArbol_1 
+pivot == _4 IF @aux = _1 CUERPOIF pivot == _10 IF @aux = _2 CUERPOIF @msgNoEncontro unionAsig resul = @aux subArbol_2 
+_Elemento_encontrado_en_posicion_ WRITE subArbol_3 
+resul WRITE 

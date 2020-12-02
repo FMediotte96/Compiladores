@@ -1,0 +1,12 @@
+NOMBRE                                                      TIPO                          VALOR                                             LONGITUD                                          
+_Ingrese_un_valor_pivot_mayor_o_igual_a_1_                  CTE_STRING                    "Ingrese un valor pivot mayor o igual a 1: "      44
+pivot                                                       
+_1                                                          CTE                           1
+@msgMayor_1                                                 CTE_STRING                    "El valor debe ser >= 1"                          24
+resul                                                       
+_4                                                          CTE                           4
+@aux                                                        
+_10                                                         CTE                           10
+_2                                                          CTE                           2
+@msgNoEncontro                                              CTE_STRING                    "Elemento no encontrado"                          24
+_Elemento_encontrado_en_posicion_                           CTE_STRING                    "Elemento encontrado en posicion: "               35

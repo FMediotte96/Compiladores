@@ -1,0 +1,41 @@
+digraph G {
+	"subArbol_3" -> "subArbol_2" ;
+	"subArbol_2" -> "subArbol_1" ;
+	"subArbol_1" -> "subArbol_0" ;
+	"subArbol_0" -> "WRITE" ;
+	"WRITE" -> "_Ingrese_un_valor_pivot_mayor_o_igual_a_1_" ;
+	"subArbol_0" -> "union" ;
+	"union" -> "READ" ;
+	"READ" -> "pivot" ;
+	"union" -> "IF" ;
+	"IF" -> "<" ;
+	"<" -> "pivot" ;
+	"<" -> "_1" ;
+	"IF" -> "msgMayor_1" ;
+	"subArbol_1" -> "unionAsig" ;
+	"unionAsig" -> "IF" ;
+	"IF" -> "==" ;
+	"==" -> "pivot" ;
+	"==" -> "_4" ;
+	"IF" -> "CUERPOIF" ;
+	"CUERPOIF" -> "=" ;
+	"=" -> "aux" ;
+	"=" -> "_1" ;
+	"CUERPOIF" -> "IF" ;
+	"IF" -> "==" ;
+	"==" -> "pivot" ;
+	"==" -> "_10" ;
+	"IF" -> "CUERPOIF" ;
+	"CUERPOIF" -> "=" ;
+	"=" -> "aux" ;
+	"=" -> "_2" ;
+	"CUERPOIF" -> "msgNoEncontro" ;
+	"unionAsig" -> "=" ;
+	"=" -> "resul" ;
+	"=" -> "aux" ;
+	"subArbol_2" -> "WRITE" ;
+	"WRITE" -> "_Elemento_encontrado_en_posicion_" ;
+	"subArbol_3" -> "WRITE" ;
+	"WRITE" -> "resul" ;
+	
+}
